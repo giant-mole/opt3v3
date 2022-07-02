@@ -1,0 +1,32 @@
+[
+  {
+    "merk": "a",
+    "type": "a",
+    "prijsPerDag": 5.0,
+    "verzekeringskosten": 1.0,
+    "id": "0",
+    "verhuurd": false,
+    "aantalDagen": 1,
+    "verzekering": false
+  },
+  {
+    "merk": "b",
+    "type": "b",
+    "prijsPerDag": 5.0,
+    "verzekeringskosten": 1.0,
+    "id": "1",
+    "verhuurd": false,
+    "aantalDagen": 1,
+    "verzekering": true
+  },
+  {
+    "merk": "c",
+    "type": "c",
+    "prijsPerDag": 5.0,
+    "verzekeringskosten": 1.0,
+    "id": "2",
+    "verhuurd": false,
+    "aantalDagen": 1,
+    "verzekering": true
+  }
+]

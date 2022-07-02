@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hhs.rentathing.ToevoegenController">
+    <left>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="180.0" spacing="20.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#overzichtButton" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Overzicht" VBox.vgrow="NEVER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#verhuur" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Verhuur" VBox.vgrow="NEVER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#beheerButton" style="-fx-background-color: #B2BEB5;" text="Beheer" />
+            </children>
+            <children>
+                <Button mnemonicParsing="false" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Voeg toe" VBox.vgrow="NEVER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="30.0" top="60.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <top>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="nameLabel" text="naam">
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#logoutButton" style="-fx-background-color: #B2BEB5;" text="Logout">
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="60.0" right="60.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1052.0">
+               <children>
+                  <TextField fx:id="Laadvermogen" layoutX="177.0" layoutY="102.0" />
+                  <TextField fx:id="Gewicht" layoutX="177.0" layoutY="148.0" />
+                  <Button layoutX="177.0" layoutY="190.0" mnemonicParsing="false" onAction="#toevoegenVrachtauto" text="Voeg toe" />
+                  <Label layoutX="58.0" layoutY="62.0" text="Product" />
+                  <Label fx:id="LaadvermogenVrachtauto" layoutX="58.0" layoutY="106.0" text="Laadvermogen" />
+                  <Label fx:id="GewichtVrachtauto" layoutX="58.0" layoutY="152.0" text="Gewicht" />
+                  <Label layoutX="177.0" layoutY="62.0" text="Vrachtauto" />
+                  <TextField fx:id="Merkauto" layoutX="488.0" layoutY="97.0" />
+                  <TextField fx:id="Gewichtauto" layoutX="488.0" layoutY="143.0" />
+                  <Button layoutX="488.0" layoutY="190.0" mnemonicParsing="false" onAction="#toevoegenPersonenauto" text="Voeg toe" />
+                  <Label layoutX="369.0" layoutY="57.0" text="Product" />
+                  <Label fx:id="MerkAuto" layoutX="369.0" layoutY="101.0" text="Merk" />
+                  <Label fx:id="GewichtautoLBL" layoutX="369.0" layoutY="147.0" text="Gewicht" />
+                  <Label layoutX="488.0" layoutY="57.0" text="Personenauto" />
+                  <TextField fx:id="TypeBoormachine" layoutX="162.0" layoutY="281.0" />
+                  <TextField fx:id="MerkBoormachine" layoutX="162.0" layoutY="327.0" />
+                  <Button layoutX="162.0" layoutY="387.0" mnemonicParsing="false" onAction="#toevoegenBoormachine" text="Voeg toe" />
+                  <Label layoutX="43.0" layoutY="241.0" text="Product" />
+                  <Label fx:id="TypeBoor" layoutX="43.0" layoutY="285.0" text="Type" />
+                  <Label fx:id="MerkBoor" layoutX="43.0" layoutY="331.0" text="Merk" />
+                  <Label layoutX="162.0" layoutY="241.0" text="Boormachine" />
+                  <Label fx:id="label1" layoutX="253.0" layoutY="194.0" />
+                  <Label fx:id="label2" layoutX="563.0" layoutY="194.0" />
+                  <Label fx:id="label21" layoutX="252.0" layoutY="390.0" prefHeight="18.0" prefWidth="41.0" />
+               </children></AnchorPane>
+            </content>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+</BorderPane>

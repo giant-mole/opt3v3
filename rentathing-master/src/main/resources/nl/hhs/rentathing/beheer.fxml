@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hhs.rentathing.BeheerController">
+    <left>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="180.0" spacing="20.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#homeButton" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Overzicht" VBox.vgrow="NEVER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#beheerButton" style="-fx-background-color: #B2BEB5;" text="Beheer" />
+            </children>
+            <children>
+                <Button mnemonicParsing="false" onAction="#voegToe" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Voeg toe" VBox.vgrow="NEVER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="30.0" top="60.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <top>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="nameLabel" text="naam">
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#logoutButton" style="-fx-background-color: #B2BEB5;" text="Logout">
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="60.0" right="60.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1052.0">
+                    <children>
+                        <ListView id="Persoonenauto" fx:id="listView" editable="true" layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="880.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+            <BorderPane.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </BorderPane.margin>
+        </ScrollPane>
+    </center>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="Field1" layoutX="51.0" layoutY="42.0" />
+            <TextField fx:id="Field2" layoutX="227.0" layoutY="42.0" />
+            <TextField fx:id="Field3" layoutX="411.0" layoutY="42.0" />
+            <TextField fx:id="Field4" layoutX="608.0" layoutY="42.0" />
+            <TextField fx:id="Field5" layoutX="787.0" layoutY="42.0" />
+            <TextField fx:id="Field6" layoutX="975.0" layoutY="42.0" />
+            <Text fx:id="Label1" layoutX="51.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laadvermogen" />
+            <Button fx:id="Update" layoutX="51.0" layoutY="100.0" mnemonicParsing="false" onAction="#Update" snapToPixel="false" style="-fx-background-color: #B2BEB5;" text="Update">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Text fx:id="Label2" layoutX="227.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gewicht" />
+            <Text layoutX="411.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prijs per dag" />
+            <Text layoutX="608.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verzekerings kosten" />
+            <Text layoutX="787.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verhuurd" />
+            <Text layoutX="975.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aantal dagen" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
